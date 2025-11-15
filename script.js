@@ -4,7 +4,7 @@ function calcularjuros(event) {
     
     event.preventDefault();
     
-    
+    let Total = document.getElementById("valortotal")
     let valorinicial = Number(document.getElementById("valorinicial").value);
     let taxadejuros = Number(document.getElementById("taxadejuros").value )/ 100;
     let periodoinvestimento = Number(document.getElementById("periodoinvestimento").value);
@@ -24,7 +24,9 @@ function calcularjuros(event) {
                 total = total * (1 + taxadejuros);
                 mes ++;
         }
-        console.log(total + aportemensal)  
+        valortotal = total + aportemensal
+        Total.innerHTML = "<h2>Valor total:</h2>" + "R$" + valortotal.toFixed(2);
+        
         }
          
         
@@ -36,7 +38,8 @@ function calcularjuros(event) {
                 total = total * (1 + taxadejuros);
                 mes ++;
         }
-        console.log(total + aportemensal)  
+        valortotal = total + aportemensal
+        Total.innerHTML = "<h2>Valor total:</h2>" + "R$" + valortotal.toFixed(2);
         }
 
         }
@@ -50,7 +53,8 @@ function calcularjuros(event) {
                 total = total * (1 + taxadejuros);
                 mes ++;
         }
-        console.log(total + aportemensal)  
+        valortotal = total + aportemensal
+        Total.innerHTML = "<h2>Valor total:</h2>" + "R$" + valortotal.toFixed(2);
 
         }
         
@@ -62,7 +66,8 @@ function calcularjuros(event) {
                 total = total * (1 + taxadejuros);
                 mes ++;
         }
-        console.log(total + aportemensal)  
+        valortotal = total + aportemensal
+        Total.innerHTML = "<h2>Valor total:</h2>" + "R$" + valortotal.toFixed(2);
         }
 
     }
