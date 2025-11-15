@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Juros Compostos</title>
+</head>
+<body>
+    <form id="calculadorajuros">
+        <label for="valorinicial"> Valor Inicial:</label>
+            <input type="text" id="valorinicial">
+        <label for="taxadejuros"> Taxa de Juros</label>
+            <p><input type="text" id="taxadejuros"> <select name="opcaoperiodotaxa" id="opcaoperiodotaxa">
+                <option value="taxamensal">Mensal</option>
+                <option value="taxaanual" >Anual</option>
+            </select></p>
+        <label for="periodo"> Período</label>
+            <p><input type="text" id="periodoinvestimento"> <select name="opcaoperiodoinvestimento" id="opcaoperiodoinvestimento">
+                <option value="investimentomensal">Mensal</option>
+                <option value="investimentoanual">Anual</option>
+            </select></p>
+        <label for=""> Aporte Mensal</label>
+            <input type="text" id="aportemensal">
+        <input type="submit" value="Calcular">
+    </form>
+    
+</body>
+<script src="script.js"></script>
+</html>
